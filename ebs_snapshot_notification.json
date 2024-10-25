@@ -1,0 +1,8 @@
+{
+  "source": ["aws.ec2"],
+  "detail-type": ["EBS Snapshot Notification"],
+  "detail": {
+    "event": ["createSnapshot"],
+    "result": ["succeeded", "failed"]
+  }
+}
