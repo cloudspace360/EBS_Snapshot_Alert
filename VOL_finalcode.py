@@ -7,7 +7,7 @@ ec2_client = boto3.client('ec2')
 sns = boto3.client('sns')
 
 # Retrieve SNS Topic ARN from environment variables
-SNS_TOPIC_ARN = os.environ.get('SNS_TOPIC_ARN', 'arn:aws:sns:us-east-1:200493767521:Snapshot_EmailAlert')
+SNS_TOPIC_ARN = os.environ.get('__') # Add your SNS ARN
 
 def lambda_handler(event, context):
     # Extract details from the EventBridge event
